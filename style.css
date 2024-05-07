@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 90vw;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  background: url(images/image-product-mobile.jpg);
+  background-size: cover;
+  width: 90vw;
+  height: 300px;
+  margin-bottom: 0;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.text-container {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+h5 {
+  margin-top: 0;
+  letter-spacing: 5px;
+  font-size: 17px;
+  color: hsl(228, 12%, 48%);
+  opacity: 0.9;
+}
+
+h2 {
+  color: hsl(212, 21%, 14%);
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: "Fraunces", serif;
+}
+
+.text-container p {
+  color: hsl(228, 12%, 48%);
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.text-container div {
+  position: relative;
+}
+
+.text-container div h1 {
+  display: inline;
+  margin-top: 0;
+  font-size: 43px;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+
+.text-container div small {
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 190px;
+  font-size: 15px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.text-container button {
+  margin-top: 20px;
+  width: 80vw;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-container button img {
+  margin-right: 20px;
+  width: 20px;
+}
+
+@media (min-width: 760px) {
+  body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 550px;
+    height: 400px;
+  }
+  .product-img {
+    background: url("images/image-product-desktop.jpg");
+    height: 400px;
+    width: 300px;
+    background-size: cover;
+    margin-bottom: 0;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 0;
+  }
+  h5 {
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-size: 10px;
+    color: hsl(229, 19%, 67%);
+    opacity: 0.9;
+  }
+  .text-container {
+    width: 250px;
+    height: 360px;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 0;
+  }
+
+  h2 {
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: "Fraunces", serif;
+    line-height: 35px;
+    padding-right: 0;
+  }
+  .text-container p {
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.9;
+    padding-right: 0;
+  }
+  .text-container div h1 {
+    display: inline;
+    margin-top: 0;
+    font-size: 28px;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+  }
+  .text-container div small {
+    top: 12px;
+    left: 130px;
+    font-size: 11px;
+  }
+  .text-container button {
+    margin-top: 25px;
+    width: 200px;
+    background-color: hsl(158, 36%, 37%);
+    margin-left: 11px;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .text-container button img {
+    margin-right: 20px;
+    width: 12px;
+  }
+}
